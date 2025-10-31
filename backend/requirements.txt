@@ -1,0 +1,20 @@
+# --- Servidor e API ---
+fastapi==0.115.2
+uvicorn[standard]==0.30.1
+
+# --- Banco de dados e ORM ---
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9          # Driver PostgreSQL
+databases[postgresql]==0.9.0    # Conexões assíncronas (opcional, mas útil)
+
+# --- Schemas e validação ---
+pydantic==2.9.2
+pydantic-settings==2.4.0        # Para gerenciar variáveis de ambiente (.env)
+
+# --- Autenticação e segurança ---
+python-jose==3.3.0              # JWT
+passlib[bcrypt]==1.7.4          # Hash de senhas
+bcrypt==4.2.0
+
+# --- Utilidades gerais ---
+python-decouple==3.8            # Leitura de .env
